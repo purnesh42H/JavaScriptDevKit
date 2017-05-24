@@ -1,12 +1,12 @@
 //To point to mock data api
-/*
+
 export default function getBaseUrl() {
     const inDevelopment = window.location.hostname === 'localhost';
     return inDevelopment ? 'http://localhost:3001/':'/';
 }
-*/
 
 // To point to production data
+/*
 export default function getBaseUrl() {
     return getQueryStringParameterByName('useMockApi') ? 'http://localhost:3001' : '/';
 }
@@ -22,3 +22,4 @@ function getQueryStringParameterByName(name, url) {
 
     return decodeURIComponent(results[2].replace(/\+/g, ""))
 }
+*/
