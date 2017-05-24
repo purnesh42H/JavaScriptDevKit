@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+
 //var chalk_std = require('chalk'); //standard js
 
 import chalk_babel from 'chalk'; //babel js which transpiles to standard  js
