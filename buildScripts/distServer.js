@@ -11,7 +11,7 @@ app.use(compression());
 app.use(express.static('dist'));
 
 app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname, '../dist/index.html'))
+    res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 
 app.get('/users', function (req, res) {
@@ -25,7 +25,7 @@ app.get('/users', function (req, res) {
 
 app.listen(port, function(err) {
     if (err) {
-        console.log(err)
+        console.log(err);
     } else {
         open('http://localhost:' + port);
     }

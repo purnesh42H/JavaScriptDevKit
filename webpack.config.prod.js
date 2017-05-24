@@ -45,7 +45,8 @@ export default {
                 minifyCSS: true,
                 minifyURLs: true
             },
-            inject: true
+            inject: true,
+            trackJSToken:'115f3ef3a2c249768bbb77e3f72f77c0'
         }),
 
         // Eliminate duplicate packages when generating bundle
