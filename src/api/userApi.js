@@ -1,5 +1,11 @@
-import 'whatwg-fetch';
-import getBaseUrl from './baseUrl';
+/*
+This is a simple Web API setup which returns users
+ */
+
+/* eslint-disable no-console */
+
+import 'whatwg-fetch'; //Using fetch to get data from API
+import getBaseUrl from './baseUrl'; //Get URL
 
 const baseUrl = getBaseUrl();
 
@@ -27,6 +33,7 @@ function onSuccess(response) {
     return response.json();
 }
 
+
 function onError(error) {
-    console.log(error); //eslint-disable-line no-console
+    console.log(error);
 }

@@ -2,6 +2,7 @@
 // Use import for importing modules
 // Use const for default variables
 
+// Native JavaScript code
 /*
 var express = require('express')
 var path = require('path')
@@ -11,6 +12,7 @@ var port = 9000
 var app = express()
 */
 
+// Babel JS codes
 import express from 'express';
 import path from 'path';
 import open from 'open';

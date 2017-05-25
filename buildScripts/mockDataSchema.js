@@ -1,3 +1,7 @@
+/*
+A sample GraphQl Schema for generation of randomized data.
+ */
+
 export const schema = `
     type User {
         id: ID!
@@ -7,11 +11,10 @@ export const schema = `
     }
     
     type RootQuery {
-        user(id: ID): User
+        users(limit: Int, offset: Int): [User]
     }
     
     schema {
         query: RootQuery
     }
 `;
-

@@ -1,4 +1,5 @@
-//To point to mock data api
+//To point to mock data api on localhost
+// Comment this code if you don't want to generate random data
 
 export default function getBaseUrl() {
     const inDevelopment = window.location.hostname === 'localhost';
@@ -6,6 +7,8 @@ export default function getBaseUrl() {
 }
 
 // To point to production data
+// Uncomment the below code and change the "/" to your production url
+
 /*
 export default function getBaseUrl() {
     return getQueryStringParameterByName('useMockApi') ? 'http://localhost:3001' : '/';
@@ -22,4 +25,5 @@ function getQueryStringParameterByName(name, url) {
 
     return decodeURIComponent(results[2].replace(/\+/g, ""))
 }
+
 */

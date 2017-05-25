@@ -6,7 +6,6 @@
 
  /* eslint-disable no-console */
 
- //import jsf from 'json-schema-faker';
  import {schema} from './mockDataSchema';
  import { mockServer} from 'graphql-tools';
  import casual from 'casual-browserify';
@@ -29,14 +28,14 @@
 
  myMockServer.query(`
  query getUser{
-    user(id: 6) {
+    users {
         id
         firstName
         lastName
         email
     }
  }`).then(function (res) {
-     const json = JSON.stringify(res);
+     const json = JSON.stringify(res.data);
 
      fs.writeFile("./src/api/db.json", json, function (err) {
          if (err) {
