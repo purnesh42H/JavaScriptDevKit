@@ -25,5 +25,4 @@ function getQueryStringParameterByName(name, url) {
 
     return decodeURIComponent(results[2].replace(/\+/g, ""))
 }
-
 */
