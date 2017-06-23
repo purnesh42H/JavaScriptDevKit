@@ -8,11 +8,13 @@ export default {
     debug: true,
     devtool: 'source-map',
     noInfo: false,
+    //Change the path of your entry point files for prod
     entry: {
         vendor: path.resolve(__dirname, 'src/vendor'),
         main: path.resolve(__dirname, 'src/index')
 },
     target: 'web',
+    //Change the path of your output directory for prod
     output: {
         path: path.resolve(__dirname, 'dist'),
         publicPath: '/',
@@ -28,10 +30,12 @@ export default {
         // Use CommonChunkPlugin to create a separate bundle
         // of vendor libraries so that they're cached separately
         new webpack.optimize.CommonsChunkPlugin ({
+            //Name this chunk as per your source file name
             name: 'vendor'
         }),
         // Create HTML file that includes reference to bundled JS
         new HtmlWebpackPlugin ({
+            //Change it your template file
             template: 'src/index.html',
             minify: {
                 removeComments: true,
@@ -46,6 +50,7 @@ export default {
                 minifyURLs: true
             },
             inject: true,
+            //Change this to your track JS token
             trackJSToken:'115f3ef3a2c249768bbb77e3f72f77c0'
         }),
 
