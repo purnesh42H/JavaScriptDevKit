@@ -1,4 +1,4 @@
-# Node JS Starter DevKit
+# JavaScript Starter Dev Kit
 Complete Development Environment for Node JS
 
 # Features
@@ -19,8 +19,9 @@ Complete Development Environment for Node JS
 
 # Set up dev kit
 
-- Clone the repository to your machine
-- Open the terminal and change to the directory
+- Clone the repository to your machine with the name of your choice
+- Open the terminal and change to the required directory
+- Remove git tracking "rm -rf .git"
 - npm install
 
 # Start the demo app
@@ -69,5 +70,3 @@ Complete Development Environment for Node JS
     - Cache busting
     - Bundle Splitting
     - Error Logging
-
-
